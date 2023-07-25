@@ -1,5 +1,5 @@
 :root {
-  --background: #e1ffb2;
+  --background: #f5fde7;
   --text-color: #413c3c;
   --light-text-color: #a9a8a8;
   --important-notice: #f62718;
@@ -36,10 +36,17 @@ body {
   color: var(--light-text-color);
 }
 
+.topbar {
+  background: #ffffff;
+}
 .topbar .navbar {
   width: 100%;
   padding-right: 30px;
   padding-left: 30px;
+}
+
+.dropdown-toggle-nocaret:after {
+  display: none;
 }
 
 .alert-count {
@@ -72,6 +79,7 @@ body {
   margin-top: 60px;
   padding: 10px;
 }
+
 .sidebar-header {
   display: flex;
   align-items: center;

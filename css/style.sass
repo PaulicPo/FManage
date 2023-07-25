@@ -1,5 +1,5 @@
 \:root
-  --background: #e1ffb2
+  --background: #f5fde7
   --text-color: #413c3c
   --light-text-color: #a9a8a8
   --important-notice: #f62718
@@ -21,18 +21,27 @@ body
   display: flex
   border-left: 2px solid #f0f0f0
   margin-left: 1rem
+
 .user-info
   .user-name
     font-size: 15px
     color: var(--text-color)
+
   .user-job
     font-size: 12px
     color: var(--light-text-color)
+
 .topbar
+  background: #ffffff
   .navbar
     width: 100%
     padding-right: 30px
     padding-left: 30px
+
+.dropdown-toggle-nocaret
+  &:after
+    display: none
+
 .alert-count
   position: absolute
   top: 5px
@@ -47,6 +56,7 @@ body
   font-size: 12px
   color: #f0f0f0
   font-weight: bold
+
 .sidebar
   position: fixed
   top: 0
@@ -54,12 +64,12 @@ body
   left: 0
   width: 250px
   height: 100%
+
   .main-menu
     display: flex
     flex-direction: column
     margin-top: 60px
     padding: 10px
-    .menu-title
 
 .sidebar-header
   display: flex
@@ -72,12 +82,15 @@ body
   padding: 0 15px
   border-bottom: 2px solid #f0f0f0
   border-right: 2px solid #f0f0f0
+
   .logo
     width: 45px
+
   .toggle-icon
     font-size: 22px
     cursor: pointer
     color: var(--main-blue-color)
+
   .logo-text
     font-size: 22px
     margin-left: 10px
