@@ -35,6 +35,7 @@ body
   background: #ffffff
   .navbar
     width: 100%
+    height: 60px
     padding-right: 30px
     padding-left: 30px
 
@@ -97,4 +98,17 @@ body
     margin-bottom: 0
     color: var(--main-blue-color)
 
+@keyframes dropdown-animation
+  from
+    transform: translate(0, 6px)
+    opacity: 0
+  to
+    transform: translate(0, 0)
+    opacity: 1
 
+.dropdown-menu
+  border-radius: 10px
+  font-size: 14px
+  animation: 0.7s cubic-bezier(0.25, 0.8, 0.25, 1) 0s normal forwards 1 dropdown-animation
+  i
+    margin-right: 10px
