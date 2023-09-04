@@ -83,6 +83,15 @@ body {
   padding: 10px;
   box-shadow: 0 2px 6px 0 rgba(218, 218, 253, 0.65), 0 2px 6px 0 rgba(206, 206, 238, 0.54);
 }
+.sidebar .main-menu a {
+  color: var(--text-color);
+  font-size: large;
+  transition: all 0.3s ease-out;
+}
+.sidebar .main-menu a:hover {
+  color: var(--main-blue-color);
+  background: rgba(13, 110, 253, 0.12);
+}
 
 .sidebar-header {
   display: flex;
@@ -93,7 +102,6 @@ body {
   bottom: 0;
   height: 60px;
   padding: 0 15px;
-  border-bottom: 1px solid #f0f0f0;
   /*border-right: 2px solid #f0f0f0*/
 }
 .sidebar-header .logo {
